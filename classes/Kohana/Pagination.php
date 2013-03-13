@@ -200,7 +200,7 @@ class Kohana_Pagination {
         return URL::site(Request::current()->uri()).URL::query(array($this->config['current_page']['key'] => $page));
 
 			case 'route':
-				return URL::site(Request::current()->uri(array($this->config['current_page']['key'] => $page))).URL::query();
+				return URL::site(Request::current()->route()->uri(array($this->config['current_page']['key'] => $page))).URL::query();
 
 			case 'mixed':
 			    return URL::site(Request::detect_uri()).URL::query(array($this->config['current_page']['key'] => $page));
