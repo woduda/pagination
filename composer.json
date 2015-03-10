@@ -1,0 +1,13 @@
+{
+    "name": "woduda/pagination",
+    "type": "kohana-module",
+    "description": "Pagination module for Kohana framework",
+    "require": {
+        "composer/installers": "~1.0",
+        "kohana/core": ">=3.3",
+        "php": ">=5.3.6"
+    },
+    "installer-paths": {
+        "vendor/{$vendor}/{$name}": ["type:kohana-module"]
+    }
+}
